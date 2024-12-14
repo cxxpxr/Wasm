@@ -164,7 +164,7 @@
         window.addEventListener('mousemove', (event) =>
         {
             DotNet.invokeMethod('nkast.Wasm.Dom', 'JsWindowOnMouseMove', uid,
-                event.clientX, event.clientY);
+                event.movementX, event.movementY);
         });
         window.addEventListener('mousedown', (event) =>
         {
